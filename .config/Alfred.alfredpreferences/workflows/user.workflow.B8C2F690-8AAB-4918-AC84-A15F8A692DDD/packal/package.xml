@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Currency Exchange</name>
+  <version>0.1.3</version>
+  <bundle>co.theengineer.currencyExchange</bundle>
+  <updated>1551037636</updated>
+  <file>currency_exchange.alfredworkflow</file>
+</workflow>

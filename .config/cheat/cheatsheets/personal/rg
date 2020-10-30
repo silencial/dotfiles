@@ -1,0 +1,5 @@
+# To output only searching content for later processing
+rg --no-line-number --no-filename --only-matching [pattern]
+
+# Case insensitive search
+rg -i
