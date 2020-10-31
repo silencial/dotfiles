@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	ignorecase = true
+	precomposeunicode = true
+	sharedrepository = 0600
+	worktree = /Users/silencial
+[receive]
+	denyNonFastforwards = true
+[status]
+	showUntrackedFiles = no
+[yadm]
+	managed = true
+[remote "origin"]
+	url = git@github.com:silencial/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main

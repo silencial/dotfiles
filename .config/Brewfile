@@ -1,0 +1,159 @@
+tap "caskroom/versions"
+tap "cmacrae/formulae"
+tap "elethom/osxutils"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "koekeishiya/formulae"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8", link: true
+# Cross-platform make
+brew "cmake"
+# GNU compiler collection
+brew "gcc"
+# Optimized BLAS library
+brew "openblas"
+# Create and view interactive cheat sheets for *nix commands
+brew "cheat"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Configurable talking characters in ASCII art
+brew "cowsay"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg@2.8"
+# Banner-like program prints strings as ASCII art
+brew "figlet"
+# Distributed revision control system
+brew "git"
+# OpenGL Extension Wrangler Library
+brew "glew"
+# Improved top (interactive process viewer)
+brew "htop"
+# Improved colored diff
+brew "icdiff"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# LLVM's OpenMP runtime library
+brew "libomp"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Interactive computing in Python
+brew "ipython"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Platform built on V8 to build network applications
+brew "node"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Interactive environments for writing and running code
+brew "jupyterlab"
+# Library for USB device access
+brew "libusb"
+# Rainbows and unicorns in your console!
+brew "lolcat"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Mac App Store command-line interface
+brew "mas"
+# Java-based project management
+brew "maven"
+# MP3 player for Linux and UNIX
+brew "mpg123"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Package for scientific computing with Python
+brew "numpy"
+# High performance message passing library
+brew "open-mpi"
+# Open source computer vision library
+brew "opencv"
+# Library for 2D/3D image and point cloud processing
+brew "pcl"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9", link: false
+# File browser
+brew "ranger"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
+# Programatically correct mistyped console commands
+brew "thefuck"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Yet Another Dotfiles Manager
+brew "yadm"
+# A minimal status bar for macOS.
+brew "cmacrae/formulae/spacebar"
+# Add phonetic names to contacts.
+brew "elethom/osxutils/contacts-phonetic"
+# Simple hotkey-daemon for macOS.
+brew "koekeishiya/formulae/skhd"
+# A tiling window manager for macOS based on binary space partitioning.
+brew "koekeishiya/formulae/yabai"
+cask "aliwangwang"
+cask "anaconda"
+cask "anydesk"
+cask "appcleaner"
+cask "background-music"
+cask "cheatsheet"
+cask "dash"
+cask "dropbox"
+cask "fliqlo"
+cask "font-meslo-nerd-font"
+cask "free-download-manager"
+cask "google-chrome"
+cask "iina"
+cask "iterm2"
+cask "jupyter-notebook-viewer"
+cask "keka"
+cask "keycastr"
+cask "kite"
+cask "lunar"
+cask "marginnote"
+cask "mathpix-snipping-tool"
+cask "meld"
+cask "microsoft-auto-update"
+cask "microsoft-word"
+cask "neteasemusic"
+cask "notion"
+cask "obs"
+cask "openinterminal-lite"
+cask "picgo"
+cask "pock"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "slack"
+cask "spotify"
+cask "squirrel"
+cask "steam"
+cask "sublime-text"
+cask "the-unarchiver"
+cask "toggl"
+cask "typora"
+cask "visual-studio-code"
+cask "vmware-fusion"
+cask "zoomus"
+cask "zotero"
+mas "Downlink", id: 1454269192
+mas "iShot", id: 1485844094
+mas "Reeder", id: 1449412482
+mas "Spark", id: 1176895641
+mas "Telegram Lite", id: 946399090
+mas "WeChat", id: 836500024
