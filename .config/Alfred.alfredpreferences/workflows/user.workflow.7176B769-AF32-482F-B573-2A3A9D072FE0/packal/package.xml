@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Unit converter</name>
-  <version>2.1</version>
-  <bundle>wolph.unit-converter</bundle>
-  <updated>1555202683</updated>
-  <file>unit_converter.alfredworkflow</file>
-</workflow>
