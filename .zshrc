@@ -72,7 +72,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git
          autojump
          extract
-         themes
          gitignore
          colored-man-pages
          ranger-autojump
@@ -117,8 +116,27 @@ alias jn='jupyter notebook'
 alias de='conda deactivate'
 alias ls='lsd'
 alias lt='ls --tree'
-alias lambda='ssh lambda -t tmux new -A'
+alias pre='open -a Preview'
 # alias neofetch='neofetch | lolcat'
+alias matlab='/Applications/MATLAB_R2020a.app/bin/matlab &'
+
+export PATH="/usr/local/opt/node@12/bin:$PATH"
+
+# Add time info for history command
+HIST_STAMPS="yyyy-mm-dd"
+
+# Cowsay
+# cowsay -f donald "Make your shell great again ... Again!"
+
+# functions
+lambda() {
+    if [[ $@ == "-X" ]]; then
+        command ssh -X lambda -t tmux new -A
+    else
+        command ssh lambda -t tmux new -A
+    fi
+}
+syscp() {osascript -e{'on run{a}','set the clipboard to posix file a',end} "$(readlink -f -- "$1")"}
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -135,20 +153,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# The fuck
-eval $(thefuck --alias)
-
-# Bat
-export BAT_THEME="TwoDark"
-
-# Add time info for history command
-HIST_STAMPS="yyyy-mm-dd"
-
-# Cowsay
-# cowsay -f donald "Make your shell great again ... Again!"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# iterm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

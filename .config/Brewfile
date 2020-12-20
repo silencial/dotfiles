@@ -12,13 +12,17 @@ brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.8", link: true
+brew "python@3.9", link: false
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Cross-platform make
 brew "cmake"
 # GNU compiler collection
 brew "gcc"
 # Optimized BLAS library
 brew "openblas"
+# Rich and complete approach to parallelism in C++
+brew "tbb"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # GNU File, Shell, and Text utilities
@@ -27,12 +31,16 @@ brew "coreutils"
 brew "cowsay"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Secure Reliable Transport
+brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@2.8"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Distributed revision control system
 brew "git"
 # OpenGL Extension Wrangler Library
@@ -67,20 +75,22 @@ brew "lsd"
 brew "mas"
 # Java-based project management
 brew "maven"
-# MP3 player for Linux and UNIX
-brew "mpg123"
 # Fast, highly customisable system info script
 brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Platform built on V8 to build network applications
+brew "node@12"
 # Package for scientific computing with Python
 brew "numpy"
 # High performance message passing library
 brew "open-mpi"
+# Python bindings for v5 of Qt
+brew "pyqt"
 # Open source computer vision library
 brew "opencv"
 # Library for 2D/3D image and point cloud processing
 brew "pcl"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9", link: false
 # File browser
 brew "ranger"
 # Search tool like grep and The Silver Searcher
@@ -89,7 +99,7 @@ brew "ripgrep"
 brew "ruby"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
-# Programatically correct mistyped console commands
+# Programmatically correct mistyped console commands
 brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
@@ -106,54 +116,48 @@ brew "elethom/osxutils/contacts-phonetic"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
-cask "aliwangwang"
+brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 cask "anaconda"
 cask "anydesk"
 cask "appcleaner"
 cask "background-music"
 cask "cheatsheet"
-cask "dash"
 cask "dropbox"
 cask "fliqlo"
+cask "font-fira-code-nerd-font"
 cask "font-meslo-nerd-font"
 cask "free-download-manager"
 cask "google-chrome"
 cask "iina"
 cask "iterm2"
 cask "jupyter-notebook-viewer"
-cask "keka"
+cask "kap"
 cask "keycastr"
 cask "kite"
 cask "lunar"
 cask "marginnote"
 cask "mathpix-snipping-tool"
 cask "meld"
-cask "microsoft-auto-update"
-cask "microsoft-word"
 cask "neteasemusic"
 cask "notion"
 cask "obs"
 cask "openinterminal-lite"
-cask "picgo"
 cask "pock"
 cask "qlimagesize"
 cask "qlmarkdown"
 cask "slack"
-cask "spotify"
 cask "squirrel"
-cask "steam"
 cask "sublime-text"
-cask "the-unarchiver"
 cask "toggl"
 cask "typora"
+cask "upic"
 cask "visual-studio-code"
-cask "vmware-fusion"
+cask "xquartz"
 cask "zoomus"
 cask "zotero"
 mas "Downlink", id: 1454269192
 mas "iShot", id: 1485844094
 mas "Reeder", id: 1449412482
-mas "Spark", id: 1176895641
+mas "Sorted", id: 1306893526
 mas "Telegram Lite", id: 946399090
 mas "WeChat", id: 836500024

@@ -340,7 +340,7 @@ td, th {
 #write h2 {
   font-size: 1.4rem;
   margin: .7rem 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #write h2::before {
@@ -349,7 +349,7 @@ td, th {
 }
 
 #write h2::after{
-    border-bottom: 1px solid #7aafc4;
+    /* border-bottom: 1px solid #7aafc4; */
     content: '';
     width: 100px;
     display: block;

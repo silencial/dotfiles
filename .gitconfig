@@ -2,4 +2,4 @@
 	name = silencial
 	email = shawnxiex@gmail.com
 [icdiff]
-	options = --highlight
+	options = --highlight --line-numbers
