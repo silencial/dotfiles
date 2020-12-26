@@ -33,8 +33,6 @@ endif
 " Plug-in
 call plug#begin('~/.vim/bundle')
 
-Plug 'morhetz/gruvbox'
-Plug 'joshdick/onedark.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'yggdroot/indentline'
 Plug 'vim-airline/vim-airline'
@@ -52,13 +50,9 @@ Plug 'majutsushi/tagbar'
 
 call plug#end()
 
-" Color theme - solarized
-" let g:gruvbox_italic=1
-" let g:airline_theme = 'gruvbox'
-" set background=dark
-" colorscheme gruvbox
 let ayucolor="mirage"
-colorscheme ayu 
+colorscheme ayu
+" let g:airline_theme='onedark'
 
 " indentline
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
@@ -172,6 +166,9 @@ nmap <F8> :TagbarToggle<CR>
 
 " Alias
 ca w!! w !sudo tee "%"
+
+" Command
+command Dtw :%s/\s\+$//g
 
 " Highlight extensions
 au BufNewFile,BufRead *.launch setf xml

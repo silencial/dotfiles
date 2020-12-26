@@ -1,0 +1,10 @@
+{
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "yapf",
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.showHiddenFiles": true,
+    "git.stagedDecorator": "+",
+    "git.changedDecorator": "!",
+    "git.untrackedDecorator": "?",
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true
+}
