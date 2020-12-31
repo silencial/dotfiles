@@ -8,33 +8,104 @@ Version: 0.8
 Tags: dark, blue, typora
 */
 
+/* @font-face { */
+/*   font-family: Nunito; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+/*   src: local("Nunito Sans Regular"),url(./hivacruz/NunitoSans-Regular.woff) format("woff"); */
+/* } */
+
+/* @font-face { */
+/*   font-family: Nunito; */
+/*   font-style: italic; */
+/*   font-weight: 400; */
+/*   src: local("Nunito Sans It"),url(./hivacruz/NunitoSans-Italic.woff) format("woff"); */
+/* } */
+
+/* @font-face { */
+/*   font-family: Nunito; */
+/*   font-style: normal; */
+/*   font-weight: 700; */
+/*   src: local("Nunito Sans Bold"),url(./hivacruz/NunitoSans-ExtraBold.woff) format("woff"); */
+/* } */
+
+/* @font-face { */
+/*   font-family: Nunito; */
+/*   font-style: italic; */
+/*   font-weight: 700; */
+/*   src: local("Nunito Sans Bold Italic"),url(./hivacruz/NunitoSans-ExtraBoldItalic.woff) format("woff"); */
+/* } */
+
 @font-face {
-  font-family: Nunito;
+  font-family: 'Avenir Next LT Pro';
   font-style: normal;
-  font-weight: 400;
-  src: local("Nunito Sans Regular"),url(./hivacruz/NunitoSans-Regular.woff) format("woff");
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Regular"), url("./ursine/AvenirNextLTPro-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: Nunito;
+  font-family: 'Avenir Next LT Pro';
   font-style: italic;
-  font-weight: 400;
-  src: local("Nunito Sans It"),url(./hivacruz/NunitoSans-Italic.woff) format("woff");
+  font-weight: normal;
+  src: local("Avenir Next LT Pro It"), url("./ursine/AvenirNextLTPro-Italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: Nunito;
+  font-family: 'Avenir Next LT Pro';
   font-style: normal;
-  font-weight: 700;
-  src: local("Nunito Sans Bold"),url(./hivacruz/NunitoSans-ExtraBold.woff) format("woff");
+  font-weight: bold;
+  src: local("Avenir Next LT Pro Demi"), url("./ursine/AvenirNextLTPro-Demi.woff") format("woff");
 }
 
 @font-face {
-  font-family: Nunito;
+  font-family: 'Avenir Next LT Pro';
   font-style: italic;
-  font-weight: 700;
-  src: local("Nunito Sans Bold Italic"),url(./hivacruz/NunitoSans-ExtraBoldItalic.woff) format("woff");
+  font-weight: bold;
+  src: local("Avenir Next LT Pro DemiIt"), url("./ursine/AvenirNextLTPro-DemiItalic.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'Adelle';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Light"), url("./ursine/Adelle-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Adelle Light Italic"), url("./ursine/Adelle-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Adelle SemiBold"), url("./ursine/Adelle-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Adelle';
+  font-style: italic;
+  font-weight: bold;
+  src: local("Adelle SemiBold Italic"), url("./ursine/Adelle-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Fira Mono Regular"), url("./ursine/FiraMono-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Fira Mono Bold"), url("./ursine/FiraMono-Bold.ttf") format("ttf");
+}
+
 
 :root {
   --text-color: #ffffff;

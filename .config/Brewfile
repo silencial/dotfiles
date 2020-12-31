@@ -7,6 +7,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
+tap "universal-ctags/universal-ctags"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -65,6 +66,8 @@ brew "node"
 brew "pandoc"
 # Interactive environments for writing and running code
 brew "jupyterlab"
+# Pager program similar to more
+brew "less"
 # Library for USB device access
 brew "libusb"
 # Rainbows and unicorns in your console!
@@ -99,8 +102,6 @@ brew "ripgrep"
 brew "ruby"
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -116,7 +117,9 @@ brew "elethom/osxutils/contacts-phonetic"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai", args: ["HEAD"]
+brew "koekeishiya/formulae/yabai"
+# Maintained ctags implementation
+brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "anaconda"
 cask "anydesk"
 cask "appcleaner"
@@ -142,12 +145,12 @@ cask "neteasemusic"
 cask "notion"
 cask "obs"
 cask "openinterminal-lite"
+cask "pdf-expert"
 cask "pock"
 cask "qlimagesize"
 cask "qlmarkdown"
 cask "slack"
 cask "squirrel"
-cask "sublime-text"
 cask "toggl"
 cask "typora"
 cask "upic"
@@ -157,7 +160,6 @@ cask "zoomus"
 cask "zotero"
 mas "Downlink", id: 1454269192
 mas "iShot", id: 1485844094
-mas "Reeder", id: 1449412482
-mas "Sorted", id: 1306893526
 mas "Telegram Lite", id: 946399090
+mas "Vimari", id: 1480933944
 mas "WeChat", id: 836500024

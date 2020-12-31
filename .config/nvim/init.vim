@@ -6,10 +6,14 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'ayu-theme/ayu-vim'
+Plug 'kuntau/ayu-vim'
 Plug 'sainnhe/gruvbox-material'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'kaicataldo/material.vim'
+Plug 'sainnhe/forest-night'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'lambdalisue/suda.vim'
@@ -18,11 +22,13 @@ Plug 'lambdalisue/suda.vim'
 Plug 'yggdroot/indentline'
 Plug 'mhinz/vim-startify'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'mbbill/undotree'
+Plug 'liuchengxu/vista.vim'
 call plug#end()
 
 " Vim settings
@@ -30,19 +36,38 @@ set number
 set relativenumber
 set cursorline
 set scrolloff=5
+autocmd Filetype * setlocal formatoptions-=ro
 
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 
 set termguicolors
-"let ayucolor="mirage"
-"colorscheme ayu
-let g:gruvbox_material_background='medium'
-let g:gruvbox_material_enable_italic = 1
-let g:gruvbox_material_disable_italic_comment = 1
-colorscheme gruvbox-material
-"highlight Normal guibg=NONE
+
+" let ayu_comment_italic=1
+" let ayu_string_italic=1
+" let ayu_type_italic=1
+" let ayu_keyword_italic=1
+" let ayucolor="mirage"
+" colorscheme ayu
+
+" let g:gruvbox_material_background='medium'
+" let g:gruvbox_material_enable_italic = 1
+" let g:gruvbox_material_disable_italic_comment = 1
+" colorscheme gruvbox-material
+
+" let g:neodark#use_256color=1
+" colorscheme neodark
+
+" let g:material_theme_style = 'default'
+" let g:material_terminal_italics = 1
+" colorscheme material
+
+let g:forest_night_enable_italic = 1
+let g:forest_night_disable_italic_comment = 1
+colorscheme forest-night
+
+" highlight Normal guibg=NONE
 
 set inccommand=split
 set ignorecase
@@ -57,9 +82,19 @@ set hidden " open new buffer without saving changes
 
 " Key
 let mapleader=","
-nnoremap <Leader>r :so $MYVIMRC<CR>
+nnoremap <Leader>R :so $MYVIMRC<CR>
 nnoremap <CR> :noh<CR><CR>
+nnoremap <Leader>y "+y
+vnoremap <Leader>y "+y
+nnoremap <Leader>p "+p
+vnoremap <Leader>p "+p
 tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
+
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+nnoremap <C-H> <C-W>h
 " Command
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -67,7 +102,7 @@ autocmd BufWritePre * %s/\s\+$//e
 " Extensions
 " ---------------
 " Airline
-let g:airline_theme='ayu_mirage'
+let g:airline_theme='deus'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -109,6 +144,13 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+
+" Undotree
+nnoremap <Leader>u :UndotreeToggle<CR>
+
+" Vista
+let g:vista#renderer#enable_icon = 1
+nnoremap <Leader>t :Vista!!<CR>
 
 " ---------------
 " Coc setting
@@ -295,6 +337,9 @@ xnoremap          [fzf-p]gr    "sy:CocCommand   fzf-preview.ProjectGrep<Space>-F
 nnoremap <silent> [fzf-p]t     :<C-u>CocCommand fzf-preview.BufferTags<CR>
 nnoremap <silent> [fzf-p]q     :<C-u>CocCommand fzf-preview.QuickFix<CR>
 nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>
+
+let $BAT_THEME = 'Monokai Extended Bright'
+let $FZF_PREVIEW_PREVIEW_BAT_THEME = 'Monokai Extended Bright'
 
 " Airline + coc
 let g:airline_section_b="%{get(g:,'coc_git_status','')!='' && get(b:,'coc_current_function','')!=''

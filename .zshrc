@@ -73,7 +73,6 @@ plugins=(git
          autojump
          extract
          gitignore
-         colored-man-pages
          ranger-autojump
          zsh-autosuggestions
          zsh-syntax-highlighting)
@@ -119,11 +118,16 @@ alias lt='ls --tree'
 alias pre='open -a Preview'
 # alias neofetch='neofetch | lolcat'
 alias matlab='/Applications/MATLAB_R2020a.app/bin/matlab &'
+alias n='nvim'
 
+# Path
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 
 # Add time info for history command
 HIST_STAMPS="yyyy-mm-dd"
+
+# Use bat for man page
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Cowsay
 # cowsay -f donald "Make your shell great again ... Again!"
