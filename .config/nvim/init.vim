@@ -84,6 +84,8 @@ set hidden " open new buffer without saving changes
 let mapleader=","
 nnoremap <Leader>R :so $MYVIMRC<CR>
 nnoremap <CR> :noh<CR><CR>
+nnoremap <Tab> :bn<CR>
+nnoremap <S-Tab> :bp<CR>
 nnoremap <Leader>y "+y
 vnoremap <Leader>y "+y
 nnoremap <Leader>p "+p

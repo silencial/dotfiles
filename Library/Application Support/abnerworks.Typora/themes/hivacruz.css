@@ -4,108 +4,63 @@ Theme URI: https://github.com/kinoute/typora-hivacruz-theme
 Authors: Yann Defretin, Kent Pribbernow
 Author URI: https://github.com/kinoute
 Description: A Typora Dark blue theme forked from the "Cobalt" theme.
-Version: 0.8
+Version: 0.9.4
 Tags: dark, blue, typora
 */
 
-/* @font-face { */
-/*   font-family: Nunito; */
-/*   font-style: normal; */
-/*   font-weight: 400; */
-/*   src: local("Nunito Sans Regular"),url(./hivacruz/NunitoSans-Regular.woff) format("woff"); */
-/* } */
-
-/* @font-face { */
-/*   font-family: Nunito; */
-/*   font-style: italic; */
-/*   font-weight: 400; */
-/*   src: local("Nunito Sans It"),url(./hivacruz/NunitoSans-Italic.woff) format("woff"); */
-/* } */
-
-/* @font-face { */
-/*   font-family: Nunito; */
-/*   font-style: normal; */
-/*   font-weight: 700; */
-/*   src: local("Nunito Sans Bold"),url(./hivacruz/NunitoSans-ExtraBold.woff) format("woff"); */
-/* } */
-
-/* @font-face { */
-/*   font-family: Nunito; */
-/*   font-style: italic; */
-/*   font-weight: 700; */
-/*   src: local("Nunito Sans Bold Italic"),url(./hivacruz/NunitoSans-ExtraBoldItalic.woff) format("woff"); */
-/* } */
-
+/* nunito-sans-regular - latin-ext_latin */
 @font-face {
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Nunito';
   font-style: normal;
-  font-weight: normal;
-  src: local("Avenir Next LT Pro Regular"), url("./ursine/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: 400;
+  src: url('./hivacruz/nunito-sans-v6-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-regular.svg#NunitoSans') format('svg'); /* Legacy iOS */
 }
-
+/* nunito-sans-italic - latin-ext_latin */
 @font-face {
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Nunito';
   font-style: italic;
-  font-weight: normal;
-  src: local("Avenir Next LT Pro It"), url("./ursine/AvenirNextLTPro-Italic.woff") format("woff");
+  font-weight: 400;
+  src: url('./hivacruz/nunito-sans-v6-latin-ext_latin-italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-italic.svg#NunitoSans') format('svg'); /* Legacy iOS */
 }
 
+/* nunito-sans-800 - latin-ext_latin */
 @font-face {
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Nunito';
   font-style: normal;
-  font-weight: bold;
-  src: local("Avenir Next LT Pro Demi"), url("./ursine/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: 700;
+  src: url('./hivacruz/nunito-sans-v6-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800.woff') format('woff'), /* Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800.svg#NunitoSans') format('svg'); /* Legacy iOS */
 }
-
+/* nunito-sans-800italic - latin-ext_latin */
 @font-face {
-  font-family: 'Avenir Next LT Pro';
+  font-family: 'Nunito';
   font-style: italic;
-  font-weight: bold;
-  src: local("Avenir Next LT Pro DemiIt"), url("./ursine/AvenirNextLTPro-DemiItalic.woff") format("woff");
+  font-weight: 700;
+  src: url('./hivacruz/nunito-sans-v6-latin-ext_latin-800italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800italic.woff') format('woff'), /* Modern Browsers */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./hivacruz/nunito-sans-v6-latin-ext_latin-800italic.svg#NunitoSans') format('svg'); /* Legacy iOS */
 }
-
-@font-face {
-  font-family: 'Adelle';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Adelle Light"), url("./ursine/Adelle-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Adelle';
-  font-style: italic;
-  font-weight: normal;
-  src: local("Adelle Light Italic"), url("./ursine/Adelle-LightItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Adelle';
-  font-style: normal;
-  font-weight: bold;
-  src: local("Adelle SemiBold"), url("./ursine/Adelle-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Adelle';
-  font-style: italic;
-  font-weight: bold;
-  src: local("Adelle SemiBold Italic"), url("./ursine/Adelle-SemiBoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Fira Mono Regular"), url("./ursine/FiraMono-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: bold;
-  src: local("Fira Mono Bold"), url("./ursine/FiraMono-Bold.ttf") format("ttf");
-}
-
 
 :root {
   --text-color: #ffffff;
@@ -233,6 +188,21 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
   margin: 0 0 1.25rem;
+}
+
+/* Keyboard */
+kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    line-height: 10px;
+    color: #b1bac4;
+    vertical-align: middle;
+    background-color: #152638;
+    border-bottom-color: #6e7681;
+    border: 1px solid #6e7681;
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 #6e7681;
 }
 
 /* Focus Mode */
@@ -471,7 +441,7 @@ table {
 table th, table td {
   padding: 8px;
   line-height: 1.25rem;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #324560;
 }
 
@@ -479,9 +449,9 @@ table th {
   font-weight: 700;
 }
 
-table thead th {
+/*table thead th {
   vertical-align: bottom;
-}
+}*/
 
 table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
   border-top: 0;
@@ -505,6 +475,7 @@ table tr td {
   border: 1px solid #324560;
   margin: 0;
   padding: 10px 16px;
+  line-height: 1.6em;
 }
 
 table tr th:first-child, table tr td:first-child {
@@ -576,6 +547,7 @@ code {
   color: #fff;
   line-height: 2;
   padding: 5px 7px 2px 7px;
+  white-space: nowrap;
 }
 
 .md-fences {
@@ -588,6 +560,11 @@ code {
 .md-task-list-item>input {
   background: #1a283d;
   margin-left: -1.3em;
+}
+
+/* Using checkboxes in sublists should not get list circles inside inputs */
+.md-task-list-item {
+  list-style-type: none !important;
 }
 
 /*@media print {
@@ -649,11 +626,18 @@ code {
 }
 */
 
+/* Select Code Blocks Language */
 .code-tooltip {
-  background: #152638;
+  background: #192133;
   border: 1px solid #324560;
   box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
   /*margin-right: 13px!important;*/
+}
+
+/* Code Blocks language suggestion */
+.auto-suggest-container {
+  background: #192133;
+  border: 1px solid #324560;
 }
 
 .dropdown-menu {
@@ -704,8 +688,8 @@ code, .md-fences {
   content: "\2713";
   font-size: 1.2125rem;
   line-height: .9375rem;
-  margin-top: -1rem;
-}
+/*  margin-top: -1rem;
+*/}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
   .task-list-item input:before, .task-list-item input:checked:before, .task-list-item input[checked]:before {
@@ -873,7 +857,6 @@ p.mathjax-block, .mathjax-block {
 }
 
 #md-searchpanel .btn {
-  border: 1px solid #324560;
   font-size: 11px;
 }
 
@@ -1066,6 +1049,10 @@ input {
   width: 5ch;
 }
 
+#typora-source .CodeMirror-gutter-wrapper {
+  font-size: 1rem;
+}
+
 .cm-s-inner .CodeMirror-cursor {
   border-left: solid thin #f8f8f2!important;
 }
@@ -1171,14 +1158,20 @@ input {
 #write ol>li, #write ul>li {
   color: #f0b752;
   font-weight: 700;
+  font-size: 1.2em;
 }
 
 #write ul>li ul>li {
   list-style-type: circle;
   background-color: transparent;
   font-weight: 700;
+  font-size: 1em;
 }
 
+#write ul>li ul>li ul>li {
+  list-style-type: square;
+  font-size: 1em;
+}
 
 #write ol>li>*, #write ul>li>* {
   color: #fff;
@@ -1247,6 +1240,7 @@ mark {
   color: #000;
   line-height: 2;
   padding: 5px 7px 2px 7px;
+  white-space: nowrap;
 }
 
 .cm-s-typora-default {
@@ -1343,9 +1337,9 @@ mark {
   color: #8aa1e1;
 }
 
-.CodeMirror-activeline .CodeMirror-gutter-elt {
+/*.CodeMirror-activeline .CodeMirror-gutter-elt {
   color: white !important;
-}
+}*/
 
 /* mega menu */
 .megamenu-content,
@@ -1475,6 +1469,15 @@ mark {
   color: var(--text-color);
 }
 
+.noteText > tspan {
+    fill: #333 !important;
+    color: #333 !important;
+}
+
+.taskText {
+    fill: #333 !important;
+}
+
 /* Class diagram specific */
 g.classGroup line{
   stroke: var(--text-color);
@@ -1532,6 +1535,11 @@ text.slice {
 #ty-tooltip {
   background-color: black;
   color: white;
+}
+
+/* Yellow border when focusing Code block language input */
+.code-tooltip .ty-input {
+    border: 0;
 }
 
 /* header in setting */
@@ -1648,7 +1656,7 @@ input[type="radio"]:before {
   border: 1px solid #324560;
   border-radius: 0.55rem;
   background-color: #212431 !important;
-  margin-top: -0.4rem;
+  margin-top: -0.7rem;
   margin-left: -0.1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1716,6 +1724,8 @@ input[type="checkbox"]:checked:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--text-color);
+  margin-top: -0.5rem;
+  margin-left: -0.1rem;
 }
 
 /* checkbox checked hover*/
@@ -1724,6 +1734,12 @@ input[type="checkbox"]:checked:hover:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: white;
+  margin-top: -0.5rem;
+  margin-left: -0.1rem;
+}
+
+#write input[type="checkbox"]:before, #write input[type="checkbox"]:checked:before {
+  margin-top: -0.97rem;
 }
 
 /* input number in settings for Win/Linux */
@@ -1744,3 +1760,12 @@ input:not([type="range"]):not([type="color"]) {
   background-color: rgba(0, 0, 0, 0);
 }
 
+/* Remove dashed border on filenames in the sidebar */
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+    outline: 0 !important;
+}
+
+/* Handle long filenames in sidebar */
+file-node-title-name-part {
+  white-space: pre-wrap;
+}

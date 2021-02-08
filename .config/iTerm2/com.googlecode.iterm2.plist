@@ -2806,6 +2806,8 @@
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>Selection Respects Soft Boundaries</key>
+	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>SmartPlacement</key>
