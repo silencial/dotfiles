@@ -59,7 +59,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -121,10 +121,8 @@ alias matlab='/Applications/MATLAB_R2020a.app/bin/matlab &'
 alias n='nvim'
 
 # Path
+# For hexo
 export PATH="/usr/local/opt/node@12/bin:$PATH"
-
-# Add time info for history command
-HIST_STAMPS="yyyy-mm-dd"
 
 # Use bat for man page
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
