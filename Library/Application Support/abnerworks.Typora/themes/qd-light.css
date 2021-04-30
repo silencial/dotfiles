@@ -200,7 +200,7 @@ content {
   font-weight: 800;
   line-height: 3rem;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #write h1 {
@@ -230,6 +230,7 @@ content {
 #write h2 {
   font-size: 2rem;
   margin: 2rem auto 1rem;
+  /* text-transform: capitalize */
 }
 
 #write h3,
@@ -417,6 +418,10 @@ content {
 #write ol ol {
   list-style: lower-roman;
   margin-left: 1rem;
+}
+
+#write ol ol ol {
+  list-style: lower-alpha;
 }
 
 #write ol ol,

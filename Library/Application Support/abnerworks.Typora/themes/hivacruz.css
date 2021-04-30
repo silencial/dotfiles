@@ -1173,6 +1173,17 @@ input {
   font-size: 1em;
 }
 
+#write ol>li ol>li {
+  list-style-type: lower-roman;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+#write ol>li ol>li ol>li {
+  list-style-type: lower-alpha;
+  font-size: 1em;
+}
+
 #write ol>li>*, #write ul>li>* {
   color: #fff;
   font-weight: 400;
@@ -1240,7 +1251,7 @@ mark {
   color: #000;
   line-height: 2;
   padding: 5px 7px 2px 7px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .cm-s-typora-default {

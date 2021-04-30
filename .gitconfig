@@ -3,3 +3,5 @@
 	email = shawnxiex@gmail.com
 [icdiff]
 	options = --highlight --line-numbers
+[core]
+	editor = nvim

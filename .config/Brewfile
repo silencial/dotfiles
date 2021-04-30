@@ -1,4 +1,3 @@
-tap "caskroom/versions"
 tap "cmacrae/formulae"
 tap "elethom/osxutils"
 tap "homebrew/bundle"
@@ -8,32 +7,42 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "universal-ctags/universal-ctags"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9", link: false
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
-# Cross-platform make
-brew "cmake"
+# Collection of portable C++ source libraries
+brew "boost"
+# Core application library for C
+brew "glib"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # GNU compiler collection
 brew "gcc"
 # Optimized BLAS library
 brew "openblas"
 # Rich and complete approach to parallelism in C++
 brew "tbb"
+# Suite of Sparse Matrix Software
+brew "suite-sparse"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# Cross-platform make
+brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
-# Manage compile and link flags for libraries
-brew "pkg-config"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
 # Secure Reliable Transport
 brew "srt"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
@@ -42,6 +51,8 @@ brew "ffmpeg@2.8"
 brew "figlet"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Distributed revision control system
 brew "git"
 # OpenGL Extension Wrangler Library
@@ -82,18 +93,22 @@ brew "maven"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Platform built on V8 to build network applications
-brew "node@12"
 # Package for scientific computing with Python
 brew "numpy"
 # High performance message passing library
 brew "open-mpi"
-# Python bindings for v5 of Qt
-brew "pyqt"
 # Open source computer vision library
-brew "opencv"
+brew "opencv@3"
+# Python bindings for v5 of Qt
+brew "pyqt@5"
+# Tool to create Python bindings for C and C++ libraries
+brew "sip"
+# Toolkit for 3D computer graphics, image processing, and visualization
+brew "vtk@8.2"
 # Library for 2D/3D image and point cloud processing
 brew "pcl"
+# Python bindings for v6 of Qt
+brew "pyqt"
 # File browser
 brew "ranger"
 # Search tool like grep and The Silver Searcher
@@ -110,6 +125,8 @@ brew "tree"
 brew "vim"
 # Yet Another Dotfiles Manager
 brew "yadm"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
 # A minimal status bar for macOS.
 brew "cmacrae/formulae/spacebar"
 # Add phonetic names to contacts.
@@ -120,43 +137,78 @@ brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 # Maintained ctags implementation
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+# Distribution of the Python and R programming languages for scientific computing
 cask "anaconda"
+# Allows connection to a computer remotely
 cask "anydesk"
+# Application uninstaller
 cask "appcleaner"
-cask "background-music"
+# Tool to list all active shortcuts of the current application
 cask "cheatsheet"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
 cask "fliqlo"
+cask "font-caskaydia-cove-nerd-font"
 cask "font-fira-code-nerd-font"
-cask "font-meslo-nerd-font"
+# Download accelerator and organizer
 cask "free-download-manager"
+# Web browser
 cask "google-chrome"
+# Free and open-source media player
 cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Utility to render Jupyter notebooks
 cask "jupyter-notebook-viewer"
+# Open-source screen recorder built with web technology
 cask "kap"
+# Open-source keystroke visualizer
 cask "keycastr"
 cask "kite"
+# Adaptive brightness for external displays
 cask "lunar"
+# E-reader
 cask "marginnote"
+# Scanner app for math and science
 cask "mathpix-snipping-tool"
+# Visual diff and merge tool
 cask "meld"
+# Open-source mesh processing system
+cask "meshlab"
+# Re-mounts write-protected NTFS volumes
+cask "mounty"
+# Music streaming platform
 cask "neteasemusic"
+# App to write, plan, collaborate, and get organized
 cask "notion"
+# Open-source software for live streaming and screen recording
 cask "obs"
+# Finder Toolbar app to open the current directory in Terminal
 cask "openinterminal-lite"
+# PDF reader, editor and annotator
 cask "pdf-expert"
+# Utility to display the Dock in the Touch Bar
 cask "pock"
+# Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
+# QuickLook generator for Markdown files
 cask "qlmarkdown"
+# Team communication and collaboration software
 cask "slack"
+# Rime input method engine
 cask "squirrel"
 cask "toggl"
+# Configurable document editor that supports Markdown
 cask "typora"
+# Native and simple picture and file upload tool
 cask "upic"
+# Open-source code editor
 cask "visual-studio-code"
+# Open-source version of the X.Org X Window System
 cask "xquartz"
-cask "zoomus"
+# Video communication and virtual meeting platform
+cask "zoom"
+# Collect, organize, cite, and share research sources
 cask "zotero"
 mas "Downlink", id: 1454269192
 mas "iShot", id: 1485844094

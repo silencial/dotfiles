@@ -1,3 +1,9 @@
+# Make sure PATH in tmux is in the same order
+if [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -117,12 +123,11 @@ alias ls='lsd'
 alias lt='ls --tree'
 alias pre='open -a Preview'
 # alias neofetch='neofetch | lolcat'
-alias matlab='/Applications/MATLAB_R2020a.app/bin/matlab &'
+alias matlab='/Applications/MATLAB_R2021a.app/bin/matlab &'
 alias n='nvim'
 
 # Path
-# For hexo
-export PATH="/usr/local/opt/node@12/bin:$PATH"
+export PATH="/Users/silencial/Documents/Software/chromedriver_mac64:$PATH"
 
 # Use bat for man page
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
