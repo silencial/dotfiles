@@ -32,6 +32,7 @@ Plug 'liuchengxu/vista.vim'
 call plug#end()
 
 " Vim settings
+let g:python3_host_prog  = '/usr/local/anaconda3/bin/python'
 set number
 set relativenumber
 set cursorline
